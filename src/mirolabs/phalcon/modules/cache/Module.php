@@ -1,6 +1,6 @@
 <?php
 
-namespace dictionary;
+namespace mirolabs\phalcon\modules\cache;
 
 
 class Module extends \mirolabs\phalcon\Framework\Module
