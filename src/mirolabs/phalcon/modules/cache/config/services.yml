@@ -1,0 +1,62 @@
+parameters:
+  cache.lifetime.minute: 60
+  cache.lifetime.hour: 3600
+  cache.lifetime.day: 86400
+  cache.lifetime.week: 604800
+
+services:
+  cache.frontend.factory:
+    class: mirolabs\phalcon\modules\cache\services\FrontendFactory
+    arguments: []
+
+  cache.frontend.data.minute:
+    class: Phalcon\Cache\Frontend\Data
+    factory_service: cache.frontend.factory
+    factory_method: getData
+    arguments: [%cache.lifetime.minute%]
+
+  cache.frontend.data.hour:
+    class: Phalcon\Cache\Frontend\Data
+    factory_service: cache.frontend.factory
+    factory_method: getData
+    arguments: [%cache.lifetime.hour%]
+
+  cache.frontend.data.day:
+    class: Phalcon\Cache\Frontend\Data
+    factory_service: cache.frontend.factory
+    factory_method: getData
+    arguments: [%cache.lifetime.day%]
+
+  cache.frontend.data.week:
+    class: Phalcon\Cache\Frontend\Data
+    factory_service: cache.frontend.factory
+    factory_method: getData
+    arguments: [%cache.lifetime.week%]
+
+  cache.frontend.output.minute:
+    class: Phalcon\Cache\Frontend\Output
+    factory_service: cache.frontend.factory
+    factory_method: getOutput
+    arguments: [%cache.lifetime.minute%]
+
+  cache.frontend.output.hour:
+    class: Phalcon\Cache\Frontend\Output
+    factory_service: cache.frontend.factory
+    factory_method: getOutput
+    arguments: [%cache.lifetime.hour%]
+
+  cache.frontend.output.day:
+    class: Phalcon\Cache\Frontend\Output
+    factory_service: cache.frontend.factory
+    factory_method: getOutput
+    arguments: [%cache.lifetime.day%]
+
+  cache.frontend.output.week:
+    class: Phalcon\Cache\Frontend\Output
+    factory_service: cache.frontend.factory
+    factory_method: getOutput
+    arguments: [%cache.lifetime.week%]
+
+  cache.backend.factory:
+    class: mirolabs\phalcon\modules\cache\services\BackendFactory
+    arguments: []

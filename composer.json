@@ -1,0 +1,27 @@
+{
+    "name": "mirolabs/module-cache",
+    "description": "cache factory",
+    "authors": [
+        {
+            "name": "mirobrando",
+            "email": "mirobrando@wp.pl"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "mirolabs": "./src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4",
+        "mirolabs/phalcon-modules": ">=2.0"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/mirobrando/phalcon-modules.git"
+        }
+
+    ]
+}
