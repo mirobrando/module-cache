@@ -15,7 +15,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.4",
-        "mirolabs/phalcon-modules": ">=2.0.0"
+        "mirolabs/ng-phalcon": "dev-master"
     },
     "repositories": [
         {
