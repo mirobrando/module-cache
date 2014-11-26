@@ -20,7 +20,7 @@
     "repositories": [
         {
             "type": "git",
-            "url": "https://github.com/mirobrando/phalcon-modules.git"
+            "url": "https://github.com/mirobrando/phalcon-application.git"
         }
 
     ]
