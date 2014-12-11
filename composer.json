@@ -1,6 +1,7 @@
 {
     "name": "mirolabs/module-cache",
     "description": "cache factory",
+    "license": "MIT",
     "authors": [
         {
             "name": "mirobrando",
@@ -14,6 +15,7 @@
     },
     "minimum-stability": "dev",
     "require": {
-        "php": ">=5.4"
+        "php": ">=5.4",
+	"mirolabs/ng-phalcon": ">=0.4.0"
     }
 }
